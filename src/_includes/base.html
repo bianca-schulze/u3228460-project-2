@@ -8,11 +8,14 @@
 
     <!-- set the site title to be a variable, defined in the md file -->
     <title>{{ title }}</title>
+
+
 </head>
 
 <body>
     <header>
         <div class="inner-wrapper">
+            {% include '_navbar.html' %}
             <h1>{{ title }}</h1>
         </div>
     </header>
