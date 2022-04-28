@@ -3,6 +3,7 @@ font-family: 'Libre Bodoni', serif;
 font-family: 'Quicksand', sans-serif;
 */
 
+/* MAIN ELEMENTS */
 body {
     font-size: 16px;
     background-color: #f4f4f4;
@@ -12,7 +13,7 @@ body {
 h1 {
     font-size: 3em;
     font-family: 'Libre Bodoni', serif;
-    font-weight: 700;
+    font-weight: 400;
     /* shorthand for TOP RIGHT BOTTOM LEFT */
     /* margin: 1em 0 1.5em 0; */
 }
@@ -20,6 +21,7 @@ h1 {
 h2 {
     font-size: 1.6em;
     font-family: 'Libre Bodoni', serif;
+    margin-top: 2em;
 }
 
 h3 {
@@ -68,6 +70,7 @@ footer {
     font-family: 'Libre Bodoni', serif;
     font-weight: 700;
     font-size: 10em;
+    margin-top: 0;
 }
 
 
@@ -76,6 +79,12 @@ main {
     margin-bottom: 2em;
 }
 
+.bold {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+/* MAIN NAVIGATION */
 .menu {
     display: grid;
     grid-template-columns: 6fr 4fr;
@@ -104,6 +113,13 @@ main {
     color: white;
     transition: top ease 0.5s;
     top: -0.2em;
+}
 
+.grid-img-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+#block-color {
+    background-color: lightpink;
 }

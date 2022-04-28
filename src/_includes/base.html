@@ -16,7 +16,6 @@
     <header>
         <div class="inner-wrapper">
             {% include '_navbar.html' %}
-            <h1>{{ title }}</h1>
         </div>
     </header>
     <main>
@@ -25,6 +24,7 @@
             <!-- the content here is loaded through the homepage template -->
             {% block content %}
             {{ content }}
+            {% include 'image-right.html' %}
             {% endblock %}
         </div>
     </main>
