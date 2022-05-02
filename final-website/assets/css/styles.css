@@ -4,6 +4,10 @@ font-family: 'Quicksand', sans-serif;
 */
 
 /* MAIN ELEMENTS */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
     background-color: #f4f4f4;
@@ -14,12 +18,24 @@ h1 {
     font-size: 3em;
     font-family: 'Libre Bodoni', serif;
     font-weight: 400;
-    /* shorthand for TOP RIGHT BOTTOM LEFT */
-    /* margin: 1em 0 1.5em 0; */
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+    position: relative;
+    top: 0;
+    padding: 1em;
+}
+
+a:hover {
+    color: white;
+    transition: top ease 0.5s;
+    top: -0.1em;
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 2.5em;
     font-family: 'Libre Bodoni', serif;
     margin-top: 2em;
 }
@@ -27,6 +43,21 @@ h2 {
 h3 {
     font-size: 1.4em;
     font-family: 'Libre Bodoni', serif;
+    margin-top: 2.1em;
+}
+
+h5 {
+    font-size: 1.4em;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.float-right {
+    float: right;
 }
 
 p {
@@ -84,6 +115,13 @@ main {
     font-size: 1.2em;
 }
 
+#white {
+    color: white;
+    margin-top: -1.5em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
 /* MAIN NAVIGATION */
 .menu {
     display: grid;
@@ -132,6 +170,19 @@ hr {
     margin-top: -10em;
 }
 
+#grey {
+    border: 10em solid #EFEFEF;
+    width: 50%;
+    margin-top: -20em;
+    float: right;
+}
+
+#grey-2 {
+    border: 10em solid #EFEFEF;
+    width: 50%;
+    margin-top: -20em;
+}
+
 .space {
     margin-top: 5em;
 }
@@ -176,9 +227,116 @@ hr {
     max-width: 60vw;
 }
 
-#mockup-myhealth {
-    background-image: url(https://i.imgur.com/WHWxfAs.jpg);
+/* PORTFOLIO */
+
+#mockup-goodberrys {
+    background-image: url(https://i.imgur.com/8pxGfnr.png);
     height: 400px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.portfolio-grid p {
+    align-self: center;
+}
+
+#mockup-myhealth {
+    background-image: url(https://i.imgur.com/AERhjOJ.png);
+    height: 400px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    ;
+}
+
+.portfolio-grid-2 {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+}
+
+.portfolio-grid-2 p {
+    align-self: center;
+    text-align: end;
+}
+
+/* SKILLS GRID */
+
+.black-container {
+    background-color: black;
+    padding: 8em;
+    margin: 0em calc(50% - 50vw);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 4em 0 4em;
+    grid-gap: 5em;
+}
+
+.skills-grid p {
+    color: white;
+    text-align: center;
+
+}
+
+#roman-1 {
+    background-image: url(https://i.imgur.com/z7BXSq1.png);
+    height: 5em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#roman-2 {
+    background-image: url(https://i.imgur.com/QA4oBdm.png);
+    height: 5em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#roman-3 {
+    background-image: url(https://i.imgur.com/gjeCqcJ.png);
+    height: 5em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#roman-4 {
+    background-image: url(https://i.imgur.com/crdP5v0.png);
+    height: 5em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#roman-5 {
+    background-image: url(https://i.imgur.com/5JJuZGD.png);
+    height: 5em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#roman-6 {
+    background-image: url(https://i.imgur.com/9ahPIJb.png);
+    height: 5em;
     width: auto;
     background-size: contain;
     background-repeat: no-repeat;

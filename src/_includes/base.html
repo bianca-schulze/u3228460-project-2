@@ -24,9 +24,11 @@
             <!-- the content here is loaded through the homepage template -->
             {% block content %}
             {{ content }}
-            {% include 'image-right.html' %}
-            {% include 'portfolio-cards.html' %}
-            {% include 'portfolio.html' %}
+            {% include '_image-right.html' %}
+            {% include '_portfolio-cards.html' %}
+            {% include '_portfolio.html' %}
+            {% include '_portfolio-2.html' %}
+            {% include '_skills.html' %}
             {% endblock %}
         </div>
     </main>

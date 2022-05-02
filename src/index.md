@@ -3,7 +3,7 @@
 layout: layouts/homepage
 
 # set the page title
-title: B.
+title: Bianca's Design
 
 # We can set extra info here to use in our templates
 
@@ -12,6 +12,5 @@ hero:
     
 ---
 
-## About me
-
+## Portfolio
 
