@@ -1,6 +1,6 @@
 ---
 # set the layout to use, in this case, the homepage one
-layout: layouts/contact
+layout: layouts/homepage
 
 # set the page title
 title: Bianca's Design

@@ -1,14 +1,7 @@
-/*
-font-family: 'Libre Bodoni', serif;
-font-family: 'Quicksand', sans-serif;
-*/
-
 /* MAIN ELEMENTS */
-/*
 html {
     scroll-behavior: smooth;
 }
-*/
 
 body {
     font-size: 16px;
@@ -16,9 +9,16 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Libre Bodoni', serif;
+}
+
 h1 {
     font-size: 3em;
-    font-family: 'Libre Bodoni', serif;
     font-weight: 400;
 }
 
@@ -36,30 +36,24 @@ a:hover {
 
 h2 {
     font-size: 2.5em;
-    font-family: 'Libre Bodoni', serif;
     margin-top: 1em;
     padding-bottom: 1em;
 }
 
 h3 {
-    font-size: 2em;
-    font-family: 'Libre Bodoni', serif;
+    font-size: 1.5em;
     margin-top: 2.1em;
+    margin-bottom: 1em;
 }
 
 h5 {
     font-size: 1.4em;
-    font-family: 'Quicksand',
-        sans-serif;
     font-weight: 600;
     color: white;
     text-align: center;
     margin-bottom: 0.5em;
 }
 
-.float-right {
-    float: right;
-}
 
 p {
     font-size: 1.2em;
@@ -84,27 +78,6 @@ footer {
     padding: 2em;
 }
 
-.hero {
-    text-align: center;
-    background: #000;
-    height: 44em;
-    padding: 2em;
-    margin: 0em calc(50% - 50vw);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 14em;
-}
-
-.hero h2 {
-    color: white;
-    font-family: 'Libre Bodoni', serif;
-    font-weight: 700;
-    font-size: 10em;
-    margin-top: 0;
-}
-
-
 main {
     margin-bottom: 2em;
 }
@@ -121,17 +94,43 @@ main {
 }
 
 .bold {
-    font-family: 'Quicksand', sans-serif;
     font-weight: 600;
+}
+
+
+.space {
+    margin-top: 5em;
+}
+
+.centre-align {
+    text-align: center;
+}
+
+/* HERO BANNER */
+.hero {
+    text-align: center;
+    background: #000;
+    height: 44em;
+    padding: 2em;
+    margin: 0em calc(50% - 50vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 14em;
+}
+
+.hero h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 10em;
+    margin-top: 0;
 }
 
 /* MAIN NAVIGATION */
 .menu {
     display: grid;
     grid-template-columns: 6fr 4fr;
-
 }
-
 
 .subgrid {
     display: grid;
@@ -141,7 +140,6 @@ main {
 }
 
 .subgrid a {
-    font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
     font-weight: 100;
     color: #000;
@@ -162,7 +160,7 @@ main {
     margin: 0 1em -0.15em 1em;
 }
 
-
+/* PORTFOLIO INTRO GRID */
 .grid-img-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,6 +171,16 @@ main {
     align-self: center;
 }
 
+#self-portrait-bnw {
+    background-image: url(https://i.imgur.com/WHWxfAs.jpg);
+    height: 25em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* DECORATIVE LINES */
 hr {
     border: 5em solid black;
     margin: 0em calc(50% - 50vw);
@@ -187,9 +195,9 @@ hr {
 }
 
 #grey-2 {
-    border: 10em solid #E8E8E8;
+    border: 5em solid #E8E8E8;
     width: 50%;
-    margin-top: -20em;
+    margin-top: -12em;
 }
 
 #brown {
@@ -201,29 +209,10 @@ hr {
 
 #big-hr {
     border: 10em solid black;
-    margin-top: -10em;
-}
-
-.space {
-    margin-top: 5em;
-}
-
-.centre-align {
-    text-align: center;
-}
-
-/* IMAGES */
-#self-portrait-bnw {
-    background-image: url(https://i.imgur.com/WHWxfAs.jpg);
-    height: 25em;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-top: -5em;
 }
 
 /* PORTFOLIO */
-
 #mockup-goodberrys {
     background-image: url(https://i.imgur.com/8pxGfnr.png);
     height: 31.25em;
@@ -236,10 +225,12 @@ hr {
 .portfolio-grid {
     display: grid;
     grid-template-columns: 2fr 6fr;
+    margin-top: 4em;
 }
 
-.portfolio-grid p {
+.portfolio-grid div {
     align-self: center;
+    padding-right: 1em;
 }
 
 #mockup-myhealth {
@@ -249,22 +240,10 @@ hr {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    ;
-}
-
-.portfolio-grid-2 {
-    display: grid;
-    grid-template-columns: 6fr 2fr;
-}
-
-.portfolio-grid-2 p {
-    align-self: center;
-    text-align: end;
 }
 
 #mockup-contour {
-    background-image: url(https://i.imgur.com/fXNoMUL.png
-);
+    background-image: url(https://i.imgur.com/fXNoMUL.png);
     height: 31.25em;
     width: auto;
     background-size: contain;
@@ -272,17 +251,8 @@ hr {
     background-position: center;
 }
 
-.portfolio-grid-3 {
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-}
-
-.portfolio-grid-3 p {
-    align-self: center;
-}
 
 /* SKILLS GRID */
-
 .black-container {
     background-color: black;
     padding: 8em;
@@ -307,12 +277,9 @@ hr {
     height: 4em;
     width: auto;
     padding-bottom: 0.5em;
-
 }
 
-
-/* PROJECT GRID */
-
+/* PORTFOLIO GRID */
 .grid-card {
     margin-top: 2em;
     display: grid;
@@ -333,7 +300,6 @@ hr {
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
     max-width: 20em;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -356,13 +322,11 @@ img {
 }
 
 /* ANCHORS */
-
 section {
     scroll-margin-top: 6.8rem;
 }
 
 /* NEXT BUTTONS */
-
 .grid-img-right a {
     background-color: black;
     color: white;
@@ -377,14 +341,11 @@ section {
     background-color: #CEC6B2;
 }
 
-
 .grid-img-right img {
     width: 40em;
 }
 
-.portfolio-grid a,
-.portfolio-grid-2 a,
-.portfolio-grid-3 a {
+.portfolio-grid a {
     background-color: #E8E8E8;
     padding: 0.8em 1.6em;
     text-align: center;
@@ -393,9 +354,7 @@ section {
     display: inline-block;
 }
 
-.portfolio-grid a:hover,
-.portfolio-grid-2 a:hover,
-.portfolio-grid-3 a:hover {
+.portfolio-grid a:hover {
     background-color: #CEC6B2;
 }
 
@@ -425,10 +384,10 @@ section {
 
 /* SOCIAL ICONS */
 .socials-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2em auto;
-    max-width: 10vw;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
 }
 
 .socials-grid img {
@@ -437,37 +396,36 @@ section {
 
 /* MEDIA QUERIES */
 
-/* for 1200px */
-@media (max-width: 75em) {}
-
 /* for 1024px */
 @media (max-width: 64em) {
 
-    .portfolio-grid,
-    .portfolio-grid-2,
-    .portfolio-grid-3 {
+    .portfolio-grid {
         grid-template-columns: 1fr;
     }
 
     .grid-img-right {
         grid-template-columns: 1fr;
     }
+}
 
-    .socials-grid {
-        max-width: 20vw;
+/*  for 768px  */
+@media (max-width: 48em) {
+
+    footer img {
+        display: none;
     }
 
-    /*  for 768px  */
-    @media (max-width: 48em) {
-        footer img {
-            display: none;
-        }
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1em 0 1em;
+    }
 
-        .skills-grid {
-            grid-template-columns: 1fr 1fr;
-            margin: 0 1em 0 1em;
+    #grey {
+        display: none;
+    }
 
-        }
+    #grey-2 {
+        display: none;
     }
 }
 
@@ -493,6 +451,11 @@ section {
         grid-gap: 2em;
     }
 
+    #mockup-goodberrys,
+    #mockup-myhealth,
+    #mockup-contour {
+        height: 20em;
+    }
 
     .hero h2 {
         font-size: 6em;
@@ -505,18 +468,7 @@ section {
     .grid-card {
         grid-template-columns: 1fr;
     }
-
-    #grey {
-        display: none;
-    }
-
-    #grey-2 {
-        display: none;
-    }
-
-
 }
-
 
 /* for 425px */
 @media (max-width: 26.5625em) {
@@ -524,10 +476,6 @@ section {
     .subgrid a {
         padding: 1em;
         font-size: 1em;
-    }
-
-    .socials-grid {
-        max-width: 30vw;
     }
 
     #mockup-goodberrys,
@@ -552,9 +500,7 @@ section {
         margin-bottom: 1em;
     }
 
-    .portfolio-grid p,
-    .portfolio-grid-2 p,
-    .portfolio-grid-3 p {
+    .portfolio-grid p {
         margin: 1em;
     }
 
@@ -570,7 +516,4 @@ section {
         height: 20em;
     }
 
-    .float-right {
-        float: none;
-    }
 }
