@@ -8,10 +8,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- load our reset stylesheet -->
-<link rel="stylesheet" href="assets/css/reset.css">
-<!-- load our main stylesheet -->
-<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="http://localhost:8080/assets/css/reset.css">
+<link rel="stylesheet" href="http://localhost:8080/assets/css/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
@@ -31,9 +29,9 @@
                  <div class="menu">
          <h1><a href="#top"> B.</a></h1>
          <ul class="subgrid">
-             <li><a href="#home">Home</a></li>
-             <li><a href="#news">News</a></li>
-             <li><a href="#contact">Contact</a></li>
+             <li><a href="#portfolio">Portfolio</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="contact">Contact</a></li>
          </ul>
 
      </div>
@@ -45,104 +43,176 @@
             <!-- STOP! Don't add anything more to the base template -->
             <!-- the content here is loaded through the homepage template -->
             
-            
-<div class="hero">
+            <div class="hero">
     <h2>BOLD.</h2>
 </div>
 
 <div class="main-content">
-    <h2>Portfolio</h2>
-
+    
 </div>
 
 <h2></h2>
 
 
 <!-- insert HTML here -->
-
-            <div class="grid-img-right">
-    <p> My portfolio is intended to provide insight into the work that I do. I want my portfolio to showcase the variety, aesthetics and skill that I am capable of. My portfolio captures the tone that I am trying to portray in the work I do. I want it to showcase accessible, simplistic and innovative design features that I tend to use in my work.</p>
+            <section id="portfolio"></section>
+<h2>Portfolio</h2>
+<div class="grid-img-right">
+    <p> My portfolio intendeds to provide insight into the work that I do. I want my portfolio to showcase the variety, aesthetics and skill that I am capable of. My portfolio captures the tone that I am trying to portray in the work I do. I want it to showcase accessible, simplistic and innovative design features that I tend to use in my work. <br><br> <a href="#content">View Portfolio</a></p>
     <p id="self-portrait-bnw"></p>
 </div>
 <div class="space"></div>
 <hr>
 
-            <!--
-<h2>Recent Work</h2>
+            <section id="content"></section>
+<h2>Contents</h2>
 <div class="grid-card">
     <div class="card">
--->
-        <!--        <a href="#"> FILL-->
-<!--
-        <div id="mockup-myhealth" alt="myHealth apps">
+        <a href="#goodberrys">
+            <img src="assets/images/mockup-goodberrys.png" alt="Mockup Goodberry's">
             <div class="container">
-                <h4>Contour556</h4>
-                <p>Localjinni's Twilight Video</p>
+                <h4>Website Prototype</h4>
+                <p>Goodberry's</p>
             </div>
--->
-            <!--        </a>-->
-<!--
-        </div>
-
+        </a>
     </div>
--->
+    <div class="card">
+        <a href="#myhealth">
+            <img src="assets/images/mockup-myhealth.png" alt="Mockup myHealth">
+            <div class="container">
+                <h4>Mobile App Prototype</h4>
+                <p>myHealth</p>
+            </div>
+        </a>
+    </div>
 
-            <h3>Website Protoype - Goodberry's</h3>
+    <div class="card">
+        <a href="#contour">
+            <img src="assets/images/mockup-contour.png" alt="Mockup Contour556">
+            <div class="container">
+                <h4>Responsive Website</h4>
+                <p>Contour 556</p>
+            </div>
+        </a>
+    </div>
+</div>
 
+            <section id="goodberrys"></section>
+<h3>Website Prototype - Goodberry's</h3>
+<div class="space"></div>
 <div class="portfolio-grid">
     <p>
-        For this assignment I was required to find an outdated website and code a new and improved working prototype. The improvements I made included improving the accessibility, reducing the amount of main navigations items and incorporating a modern style.</p>
+        For this assignment I was required to find an outdated website and code a new and improved working prototype. The improvements I made included improving the accessibility, reducing the amount of main navigations items and incorporating a modern style. <br><br><a href="#myhealth">See next</a></p>
     <p id="mockup-goodberrys"></p>
 </div>
 
 <hr id="grey">
 
-            <h3 class="float-right">Mobile App Protoype - myHealth</h3>
+            <section id="myhealth"></section>
+<h3 class="float-right">Mobile App Prototype - myHealth</h3>
 
-<div class="space"></div>
+<div class="space">
+    <div class="space"></div>
+</div><br><br><br><br>
 <div class="portfolio-grid-2">
     <p id="mockup-myhealth"></p>
     <p>
-        For this assignment I was required to go through the design thinking process to ideate and create a prototype of a health app in Adobe XD. The app needed to be accessible, have at least four main functions and promote innovative design. </p>
+        For this assignment I was required to go through the design thinking process to ideate and create a prototype of a health app in Adobe XD. The app needed to be accessible, have at least four main functions and promote innovative design. <br><br><a href="#contour">See next</a> </p>
 </div>
 
 <hr id="grey-2">
 
-            <div class="black-container">
+            <section id="contour"></section>
+<h3>Website Prototype - Contour 556</h3>
+<br><br>
+<div class="portfolio-grid-3">
+    <p>
+        For this assignment I was required to create a professional website using semantic HTML, advanced CSS and responsive design techniques. <br><br> <a href="#about">More about me</a></p>
+    <p id="mockup-contour"></p>
+</div>
+<hr id="big-hr">
+
+            <section id="about"></section>
+<h2>About me</h2>
+
+<div class="grid-img-right">
+    <p> Hello! My name is Bianca and I am currently a student studying a Bachelor of Interaction Design. University of Canberra defines Interaction Design as "the practice of designing interactive digital products, environments, systems, services and products for use by people".
+        <br><br>I have had the opportunity to employ my newly acquired skills into my Junior Designer role at the Department of Finance. In this role I am responsible for assisting the senior designer in creating design artefacts, updating website content and creating illustrations and icons for a whole of government application. <br><br> <a href="#skills">See more</a>
+    </p>
+    <img src="assets/images/self-syd.jpg">
+</div>
+<div class="space"></div>
+<hr id="brown">
+
+            <section id="skills"></section>
+<div class="black-container">
     <h2 id="white">Skills</h2>
     <div class="skills-grid">
         <div>
-            <p id="roman-1"></p>
+            <p><img src="assets/images/roman-1.png"></p>
             <h5>Attention to detail</h5>
             <p>I produce quality work with minimal mistakes and errors. </p>
         </div>
         <div>
-            <p id="roman-2"></p>
+            <p><img src="assets/images/roman-2.png"></p>
             <h5>Personable</h5>
             <p>I am outgoing and friendly towards everyone I meet. </p>
         </div>
         <div>
-            <p id="roman-3"></p>
+            <p><img src="assets/images/roman-3.png"></p>
             <h5>Clear communication</h5>
             <p>I can convey complex things into simple ideas. </p>
         </div>
         <div>
-            <p id="roman-4"></p>
+            <p><img src="assets/images/roman-4.png"></p>
             <h5>Time management</h5>
             <p>I thoughtfully plan out tasks and always meet deadlines. </p>
         </div>
         <div>
-            <p id="roman-5"></p>
+            <p><img src="assets/images/roman-5.png"></p>
             <h5>Professionalism</h5>
             <p>I am reliable, set high standards for myself and put care into the work that I achieve. </p>
         </div>
         <div>
-            <p id="roman-6"></p>
+            <p><img src="assets/images/roman-6.png"></p>
             <h5>Design products</h5>
             <p>Proficient in using Photoshop, InDesign, Illustrator, and XD. </p>
         </div>
     </div>
+    <div class="centre-align"><a href="#experiences">See experience</a></div>
+</div>
 
+            <section id="experiences"></section>
+<h2>Experience</h2>
+<div class="exp-grid">
+    <div>
+        <p>Jul 2020 — Present</p>
+        <h4>Junior Designer</h4>
+    </div>
+    <div>
+        <p class="bold">Department of Finance</p>
+        <ul>
+            <li>Design and build artefacts for the GovTEAMS websites.</li>
+            <li>Create and update the brand’s design templates and style guides. As well as create icons and branding elements for the website.</li>
+            <li>Draft content pages for the website using a boostrap theme with a basic understanding of CSS and HTML.</li>
+        </ul>
+    </div>
+    <div>
+        <p>Feb 2019 — Jul 2020</p>
+        <h4>Recruitment Advisor</h4>
+    </div>
+    <div>
+        <p class="bold">Department of Finance</p>
+        <ul>
+            <li>Managed the administrative component of onboarding staff into the department, including the Letter of Offer process.</li>
+            <li>Created internal and external job advertisements and supported the panel members throughout the whole process of onboarding new staff.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="socials-grid">
+    <a href="https://www.instagram.com/bianca.ux.design/" target="_blank"><img src="assets/images/icon-in.png"></a>
+    <a href="https://www.linkedin.com/in/bianca-schulze-885b8b1a2" target="_blank"><img src="assets/images/icon-li.png"></a>
 </div>
 
             
@@ -153,7 +223,7 @@
 <footer>
     <div>
         <ul class="subgrid">
-            <li class="bold">biancaschulze33@gmail.com</li>
+            <li class="email"><img src="assets/images/email.png">biancaschulze33@gmail.com</li>
             <li></li>
             <li><a href="#top">Back to top</a></li>
         </ul>

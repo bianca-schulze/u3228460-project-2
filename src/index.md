@@ -11,6 +11,3 @@ hero:
     title: "BOLD."
     
 ---
-
-## Portfolio
-

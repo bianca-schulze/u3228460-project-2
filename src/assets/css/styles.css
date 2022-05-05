@@ -4,9 +4,11 @@ font-family: 'Quicksand', sans-serif;
 */
 
 /* MAIN ELEMENTS */
+/*
 html {
     scroll-behavior: smooth;
 }
+*/
 
 body {
     font-size: 16px;
@@ -23,9 +25,7 @@ h1 {
 a {
     color: black;
     text-decoration-line: none;
-    position: relative;
     top: 0;
-    padding: 1em;
 }
 
 a:hover {
@@ -37,11 +37,12 @@ a:hover {
 h2 {
     font-size: 2.5em;
     font-family: 'Libre Bodoni', serif;
-    margin-top: 2em;
+    margin-top: 1em;
+    padding-bottom: 1em;
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 2em;
     font-family: 'Libre Bodoni', serif;
     margin-top: 2.1em;
 }
@@ -63,7 +64,7 @@ h5 {
 p {
     font-size: 1.2em;
     line-height: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .inner-wrapper {
@@ -80,20 +81,19 @@ header {
 
 footer {
     background-color: #CEC6B2;
-    padding: 2em 0;
+    padding: 2em;
 }
 
 .hero {
     text-align: center;
     background: #000;
-    height: 50em;
+    height: 44em;
     padding: 2em;
     margin: 0em calc(50% - 50vw);
-    /* vertically align */
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 14em;
 }
 
 .hero h2 {
@@ -105,21 +105,24 @@ footer {
 }
 
 
-
 main {
     margin-bottom: 2em;
-}
-
-.bold {
-    font-weight: 400;
-    font-size: 1.2em;
 }
 
 #white {
     color: white;
     margin-top: -1.5em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
     text-align: center;
+}
+
+.email {
+    font-size: 1.2em;
+}
+
+.bold {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
 }
 
 /* MAIN NAVIGATION */
@@ -154,13 +157,19 @@ main {
     top: -0.2em;
 }
 
+.subgrid img {
+    max-height: 1em;
+    margin: 0 1em -0.15em 1em;
+}
+
+
 .grid-img-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .grid-img-right p {
-    margin-left: 3em;
+    margin: 3em;
     align-self: center;
 }
 
@@ -171,67 +180,53 @@ hr {
 }
 
 #grey {
-    border: 10em solid #EFEFEF;
+    border: 10em solid #E8E8E8;
     width: 50%;
     margin-top: -20em;
     float: right;
 }
 
 #grey-2 {
-    border: 10em solid #EFEFEF;
+    border: 10em solid #E8E8E8;
     width: 50%;
     margin-top: -20em;
+}
+
+#brown {
+    border: 5em solid #CEC6B2;
+    width: 50%;
+    margin-top: -10em;
+    float: right;
+}
+
+#big-hr {
+    border: 10em solid black;
+    margin-top: -10em;
 }
 
 .space {
     margin-top: 5em;
 }
 
+.centre-align {
+    text-align: center;
+}
+
 /* IMAGES */
 #self-portrait-bnw {
     background-image: url(https://i.imgur.com/WHWxfAs.jpg);
-    height: 400px;
+    height: 25em;
     width: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* CARD GRID */
-
-.grid-card {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    max-width: 20em;
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-}
-
-.card a {
-    text-decoration: none;
-}
-
-.card a:hover {
-    color: black;
-}
-
-.container {
-    padding: 0.125em 1em;
-    position: relative;
-    max-width: 60vw;
-}
-
 /* PORTFOLIO */
 
 #mockup-goodberrys {
     background-image: url(https://i.imgur.com/8pxGfnr.png);
-    height: 400px;
+    height: 31.25em;
     width: auto;
     background-size: contain;
     background-repeat: no-repeat;
@@ -249,7 +244,7 @@ hr {
 
 #mockup-myhealth {
     background-image: url(https://i.imgur.com/AERhjOJ.png);
-    height: 400px;
+    height: 31.25em;
     width: auto;
     background-size: contain;
     background-repeat: no-repeat;
@@ -265,6 +260,25 @@ hr {
 .portfolio-grid-2 p {
     align-self: center;
     text-align: end;
+}
+
+#mockup-contour {
+    background-image: url(https://i.imgur.com/fXNoMUL.png
+);
+    height: 31.25em;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-grid-3 {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.portfolio-grid-3 p {
+    align-self: center;
 }
 
 /* SKILLS GRID */
@@ -289,56 +303,274 @@ hr {
 
 }
 
-#roman-1 {
-    background-image: url(https://i.imgur.com/z7BXSq1.png);
-    height: 5em;
+.skills-grid img {
+    height: 4em;
     width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-bottom: 0.5em;
+
 }
 
-#roman-2 {
-    background-image: url(https://i.imgur.com/QA4oBdm.png);
-    height: 5em;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+
+/* PROJECT GRID */
+
+.grid-card {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    max-width: 80%;
+    margin: 0 10%;
 }
 
-#roman-3 {
-    background-image: url(https://i.imgur.com/gjeCqcJ.png);
-    height: 5em;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.grid-card p {
+    margin: -0.8em 1em 1em 1.1em;
+    font-size: 1em;
 }
 
-#roman-4 {
-    background-image: url(https://i.imgur.com/crdP5v0.png);
-    height: 5em;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.grid-card h4 {
+    margin: 1em;
+    font-size: 1.2em;
 }
 
-#roman-5 {
-    background-image: url(https://i.imgur.com/5JJuZGD.png);
-    height: 5em;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.card {
+    /* Add shadows to create the "card" effect */
+    max-width: 20em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-#roman-6 {
-    background-image: url(https://i.imgur.com/9ahPIJb.png);
-    height: 5em;
-    width: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ANCHORS */
+
+section {
+    scroll-margin-top: 6.8rem;
+}
+
+/* NEXT BUTTONS */
+
+.grid-img-right a {
+    background-color: black;
+    color: white;
+    padding: 0.8em 1.6em;
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.grid-img-right a:hover {
+    background-color: #CEC6B2;
+}
+
+
+.grid-img-right img {
+    width: 40em;
+}
+
+.portfolio-grid a,
+.portfolio-grid-2 a,
+.portfolio-grid-3 a {
+    background-color: #E8E8E8;
+    padding: 0.8em 1.6em;
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.portfolio-grid a:hover,
+.portfolio-grid-2 a:hover,
+.portfolio-grid-3 a:hover {
+    background-color: #CEC6B2;
+}
+
+.black-container a {
+    background-color: white;
+    color: black;
+    padding: 0.8em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 3em;
+    margin-bottom: -3em;
+}
+
+/* EXPERIENCE GRID */
+.exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 20%;
+    grid-gap: 3em;
+}
+
+.exp-grid ul {
+    list-style: inside;
+    line-height: 2em;
+}
+
+/* SOCIAL ICONS */
+.socials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em auto;
+    max-width: 10vw;
+}
+
+.socials-grid img {
+    height: 3em;
+}
+
+/* MEDIA QUERIES */
+
+/* for 1200px */
+@media (max-width: 75em) {}
+
+/* for 1024px */
+@media (max-width: 64em) {
+
+    .portfolio-grid,
+    .portfolio-grid-2,
+    .portfolio-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-img-right {
+        grid-template-columns: 1fr;
+    }
+
+    .socials-grid {
+        max-width: 20vw;
+    }
+
+    /*  for 768px  */
+    @media (max-width: 48em) {
+        footer img {
+            display: none;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr 1fr;
+            margin: 0 1em 0 1em;
+
+        }
+    }
+}
+
+/* for 584px */
+@media (max-width: 36.5em) {
+
+    .menu {
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 2em;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer .subgrid {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+
+    .hero h2 {
+        font-size: 6em;
+    }
+
+    .hero {
+        height: 25em;
+    }
+
+    .grid-card {
+        grid-template-columns: 1fr;
+    }
+
+    #grey {
+        display: none;
+    }
+
+    #grey-2 {
+        display: none;
+    }
+
+
+}
+
+
+/* for 425px */
+@media (max-width: 26.5625em) {
+
+    .subgrid a {
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .socials-grid {
+        max-width: 30vw;
+    }
+
+    #mockup-goodberrys,
+    #mockup-myhealth,
+    #mockup-contour {
+        height: 15em;
+    }
+
+    .grid-img-right p {
+        margin: 1em;
+    }
+
+    .black-container {
+        padding: 1em;
+    }
+
+    #white {
+        margin-top: 1em;
+    }
+
+    .black-container a {
+        margin-bottom: 1em;
+    }
+
+    .portfolio-grid p,
+    .portfolio-grid-2 p,
+    .portfolio-grid-3 p {
+        margin: 1em;
+    }
+
+    #big-hr {
+        border: 5em solid black;
+    }
+
+    .hero h2 {
+        font-size: 4em;
+    }
+
+    .hero {
+        height: 20em;
+    }
+
+    .float-right {
+        float: none;
+    }
 }
