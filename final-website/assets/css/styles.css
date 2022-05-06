@@ -394,6 +394,10 @@ section {
     height: 3em;
 }
 
+.email-icon {
+    max-height: 3em;
+}
+
 /* MEDIA QUERIES */
 
 /* for 1024px */
